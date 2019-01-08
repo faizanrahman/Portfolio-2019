@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Portfolio Site</title>
+  </head>
+  <body>
+    <div class="container" style="text-align:center">
+      <!-- NAVIGATION BAR -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#about">Faizan Rahman</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active mr-4">
+              <a class="nav-link text-white" href="#projects">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-white" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item mr-4">
+                <button class="nav-link text-white" style="cursor:pointer;background-color:#343a40" onClick="window.open('resume/Web Development Resume.pdf');">Go To Resume</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ABOUT ME SECTION -->
+
+      <h2 id="about">About Me</h2>
+      <br>
+      <br>
+
+      <img src="images/profile_pic.jpg" style="width:250px;transform:rotate(-90deg);">
+
+      <br><br><br><br>
+
+
+      <p class="text-info">
+        Ever since I was a kid, I always wanted to solve problems. However, my
+        family background and tendencies took me to business education, and so I
+        went to college and then university to pursue a career in Accounting.
+        But it was still not satisfying from the inside and I was looking for a
+        bigger challenge. Finally, in 2017, I came across a friend who was
+        programming and shared with me his experience. I decided to take a peek
+        into coding and that was it. Since then, my journey to programming,
+        along with advice and support from friends, peers and teachers has
+        really given me the foothold I needed to code. I am learning new things
+        everyday, makign new things I could only imagine, and accerelarating at
+        an unprecendented pace. <br /><br />
+        Currently, I am open to all kinds of opportunities that are directly or
+        indirectly related to programming/coding. So, check out my skills and
+        the projects that I have done so far. If you are interested in working
+        together, have any comment about my site, or any project idea that I
+        could implement, you can use the form below to contact me, and I will
+        get back to you.
+      </p>
+
+      <!-- PROJECTS -->
+
+      <h2 id="projects">Projects</h2>
+      
+      <div class="card-deck">
+
+        <!--CARD 1-->
+    <div class="row">
+        <div class="card">
+          <img height="300px;" src="images/tech-bazaar1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Tech Bazaar(ECommerce Application)</h5>
+            <div class="card-text text-info">
+              An E-commerce web application designed to imitate the process
+              companies go through in developing e-commerce applications. The
+              project currently has basic functionality like shopping cart,
+              product description page, dashboard page that displays all
+              products in the database, a functioning payment system integrated
+              using the Stripe API. One of the features currently in development
+              is the email feature where the user gets the email confirmation as
+              soon as the ordering process is complete.
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Technologies used:</span><br />
+            <small class="text-muted"
+              >C# ASP.NET CORE/Entity Framework/MySQL</small
+            >
+            <a target="_blank" href="https://github.com/faizanrahman/ECommerceApp-CSharp">Github Link</a>
+          </div>
+        </div>
+    
+        <!--CARD 2-->
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">GetTek</h5>
+            <div class="card-text  text-info">
+              A price comparison web app where users can search for some tech
+              products, and see the price of that product from 5 different
+              retailers. The app displays the retailer selling that product at
+              the lowest price first, followed by the next best price, and so
+              on. Notable features of the app include:
+              <ul>
+                <li>Search Bar functionality</li>
+                <li>Product Detail Page</li>
+                <li>
+                  A Product Category page that displays products by category.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Technologies used:</span><br />
+            <small class="text-muted">Python/Django/SQlite</small>
+          </div>
+        </div>
+    </div>
+        <!--CARD 3-->
+    <div class="row">
+        <div class="card">
+          <img src="images/payroll-app.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Payroll Application</h5>
+            <div class="card-text  text-info">
+              Single Page Application (SPA) in development using Angular 7. I am
+              currently developing a payroll web app that allows users, in this
+              context, the managers/administrators to generate payroll for their
+              employees. The Minimum Viable Product(MVP) for this project is:
+              <ol>
+                <li>Add Employee to the Database</li>
+                <li>View Employee Detail</li>
+                <li>Generate Payroll for each employee in the company</li>
+                <li>Many more features to come after the MVP is complete</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Technologies used:</span><br />
+            <small class="text-muted"
+              >C# ASP.NET CORE WebAPI, Angular 7/MySQL</small
+            >
+            <a target="_blank" href="https://github.com/faizanrahman/PayrollApp">GitHub Link</a>
+          </div>
+        </div>
+
+        <!--CARD 4-->
+        <div class="card">
+          <img src="images/java-toll.PNG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Tollway System</h5>
+            <div class="card-text text-info">
+              A console application built in Java to better understand the use
+              of Object-Oriented Programming.
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Technologies used:</span><br />
+            <small class="text-muted">Java Standard Edition/Eclipse/OOP</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!--CARD 5-->
+
+        <div class="row">
+                <div class="card">
+                        <img src="images/truffles-erd.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Truffles Accounting and Inventory Management System</h5>
+                          <div class="card-text text-info">
+                            An E-commerce web application designed to imitate the process
+                            companies go through in developing e-commerce applications. The
+                            project currently has basic functionality like shopping cart,
+                            product description page, dashboard page that displays all
+                            products in the database, a functioning payment system integrated
+                            using the Stripe API. One of the features currently in development
+                            is the email feature where the user gets the email confirmation as
+                            soon as the ordering process is complete.
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <span>Technologies used:</span><br />
+                          <small class="text-muted"
+                            >Microsoft Access</small
+                          >
+                          <a target="_blank" href="https://github.com/faizanrahman/ECommerceApp-CSharp">Github Link</a>
+                        </div>
+                      </div>
+        </div>
+
+
+      <!--SKILLS SECTION-->
+
+      <hr />
+
+      <h2 id="skills">Skills</h2>
+
+      <h4>Languages</h4>
+      <img src="https://i.imgur.com/wNAqUtW.jpg" class="icons" />
+      <img src="https://i.imgur.com/Jv1yZed.png" class="icons" />
+      <img src="https://i.imgur.com/sakCOZk.png" class="icons" />
+      <img src="https://i.imgur.com/PaKBh6P.png" class="icons" />
+      <img src="https://i.imgur.com/U3VGVdO.jpg" class="icons" />
+      <img src="https://i.imgur.com/jfLJO83.jpg" class="icons" />
+      <img src="https://i.imgur.com/d2PZhAU.png" class="icons" />
+
+      <h4>Technologies</h4>
+      <img src="https://i.imgur.com/fJxmh8V.jpg" class="icons" />
+      <img src="https://i.imgur.com/RbzakCR.png" class="icons" />
+      <img src="https://i.imgur.com/Uvdt3pp.jpg" class="icons" />
+      <img src="https://i.imgur.com/LUxAyfB.png" class="icons" />
+      <img src="https://i.imgur.com/ox5rInR.jpg" class="icons" />
+      <img src="https://i.imgur.com/zAnq7wL.jpg" class="icons" />
+      <img src="https://i.imgur.com/iU0FWym.png" class="icons" />
+      <img src="https://i.imgur.com/F3W3Y7z.jpg" class="icons" />
+
+      <h4>Databases</h4>
+      <img src="https://i.imgur.com/jwC1FrD.png" class="icons" />
+      <img src="https://i.imgur.com/ce5hXmu.png" class="icons" />
+      <img src="https://i.imgur.com/2Eycupr.png" class="icons" />
+
+      <hr />
+
+      <!--CONTACT SECTION-->
+
+      <h6 class="text-info">Want to know more about me?</h6>
+      <h6 class="text-info">Any comments/suggestions or ideas?</h6>
+      <h6 class="text-info">Want to work together!</h6>
+      <h6 class="text-info">
+        Contact me via any of the below forums and I will get in touch as soon
+        as possible.
+      </h6>
+      <i class="fa fa-phone" style="font-size:48px;"></i><span style="font-weight:bold;">+1-312-885-6330</span><br>
+      <i class="fab fa-github-square" style="font-size:48px;"></i>
+      <span><a target="_blank" href="https://www.github.com/faizanrahman">www.github.com/faizanrahman</a></span><br>
+      
+      <i class="fa fa-envelope-o" style="font-size:48px;color:green;"></i>
+      <span><a href="mailto:faizanrahman89@gmail.com">faizanrahman89@gmail.com</a></span><br>
+
+      <i class="fa fa-linkedin-square" style="font-size:48px;color:blue"></i><span><a href="https://www.linkedin.com/in/faizan-rahman-1b5361140">LinkedIn Profile</a></span><br>
+
+      <a style="margin-top:10px;" class="btn btn-info" href="#top">Go Back to Top</a>
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
